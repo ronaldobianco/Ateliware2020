@@ -1,0 +1,41 @@
+<div class="jumbotron_custom">
+    <table class="table table-borderless mt-3" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th></th>
+                <th>Descricao</th>
+                <th></th>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @repositorios.each do |repositorio| %>
+                <tr>
+                    <td>
+                        <img src="<%= repositorio.img %>" alt="">
+
+                    </td>
+                    <td>
+                        <%= repositorio.name %>
+                    </td>
+                    <td>
+                        <%= repositorio.text %>
+                    </td>
+                    <td>
+                        <%= repositorio.descricao %>
+                    </td>
+                    <td>
+                        <%= repositorio.data %>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-link"><%= link_to 'Destroy', repositorio, method: :delete, data: { confirm: 'Voce tem certeza?' } %></button>
+
+                    </td>
+                </tr>
+                <% end %>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,76 @@
+<div id="carouselExampleIndicators" class="carousel slide  d-flex justify-content-center" data-interval="false" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner d-flex align-items-center">
+        <div class="carousel-item active">
+            <div class="jumbotron_custom">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img style="border-radius:50%;" src="https://media-exp1.licdn.com/dms/image/C4D03AQHimLu5B7zuWg/profile-displayphoto-shrink_200_200/0?e=1606953600&v=beta&t=e8uLeJdcZqglacLrtDJp1JXpeuyTY3E_YWRzqFVTcQw" alt="">
+                    </div>
+                    <div class="col-lg-9">
+                        <h1 class="display-4">Salve <span>Atelieware</span> ! </h1>
+                        <p class="lead">Selecione abaixo a linguagem de programação para ver seus respectivos repositórios do github</p>
+                        <hr class="my-4">
+                        <form id="form_lenguage" action="/">
+                            <div class="row">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" value="ruby" class="custom-control-input " id="defaultGroupExample1" name="groupOfDefaultRadios">
+                                    <label class="custom-control-label" for="defaultGroupExample1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1200px-Ruby_logo.svg.png" alt=""></label>
+                                </div>
+
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" value="elixir" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios">
+                                    <label class="custom-control-label" for="defaultGroupExample2"><img src="https://plugins.jetbrains.com/files/7522/97855/icon/pluginIcon.png" alt=""></label>
+                                </div>
+
+                                <!-- Group of default radios - option 3 -->
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" value="vue" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
+                                    <label class="custom-control-label" for="defaultGroupExample3"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" alt=""></label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" value="react" class="custom-control-input" id="defaultGroupExample4" name="groupOfDefaultRadios">
+                                    <label class="custom-control-label" for="defaultGroupExample4"><img src="https://www.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt=""></label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" value="angular" class="custom-control-input" id="defaultGroupExample5" name="groupOfDefaultRadios">
+                                    <label class="custom-control-label" for="defaultGroupExample5"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" alt=""></label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="jumbotron_custom">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Repositórios Git</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Meus repositorios</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <%= render 'tabela_repo'%>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <%= render 'tabela_salvos'%>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="carousel-item">
+            <div class="jumbotron_custom">
+                <%= render 'detalhes'%>
+            </div>
+        </div>
+    </div>
+</div>

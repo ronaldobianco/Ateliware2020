@@ -1,3 +1,112 @@
-// Place all the styles related to the Tweets controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400|Lato:400,300|Coda|Open+Sans);
+@import "bootstrap";
+$color_primary: #F00E43;
+$white:white;
+body {
+    background-color: #202020;
+    min-height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.carousel {
+    height: 90vh;
+    .carousel-indicators .active {
+        background-color: $color_primary;
+    }
+}
+
+.nav-link {
+    color: $white;
+}
+
+.nav-link:hover {
+    background-color: $color_primary;
+    color: $white;
+}
+
+td {
+    color: $white;
+    a {
+        color: $color_primary;
+    }
+     :hover {
+        color: white;
+        background-color: transparent;
+    }
+    img {
+        width: 30px;
+        border-radius: 50%;
+    }
+}
+
+.myCustomtable {
+    background-color: rgba(68, 68, 68, 0.486);
+}
+
+.btn-link {
+    color: $color_primary;
+}
+
+.btn-link:hover {
+    color: $white;
+}
+
+.custom-control {
+    img {
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+    }
+}
+
+.custom-control :hover {
+    border-radius: 20px;
+    background-color: $color_primary;
+    transition: all 1s ease-out;
+}
+
+.custom-control-label::after {
+    display: none;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    display: none;
+}
+
+.custom-radio .custom-control-label::before {
+    display: none;
+}
+
+.lead {
+    color: $white;
+    font-weight: 200;
+}
+
+.custom-control-label img {
+    border-radius: 50%;
+}
+
+.jumbotron_custom {
+    padding-left: 10%;
+    padding-right: 10%;
+    h1 {
+        color: $white;
+        font-weight: 300;
+    }
+    h2 {
+        color: $color_primary;
+        font-weight: 600;
+    }
+    span {
+        color: $color_primary;
+        font-weight: 600;
+    }
+}
+
+th {
+    color: $white;
+}

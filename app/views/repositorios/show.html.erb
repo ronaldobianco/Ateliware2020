@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Img:</strong>
+  <%= @repositorio.img %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @repositorio.name %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @repositorio.text %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @repositorio.descricao %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @repositorio.data %>
+</p>
+
+<%= link_to 'Edit', edit_repositorio_path(@repositorio) %> |
+<%= link_to 'Back', repositorios_path %>
